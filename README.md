@@ -64,6 +64,27 @@ pip install -e .
 python -m song_editor.app
 ```
 
+## Running Without Building an Executable
+
+If you encounter disk space issues or prefer not to build an executable, you can run Song Editor 3 directly:
+
+### On macOS/Linux:
+```bash
+./launch_song_editor_simple.sh
+```
+
+### On Windows:
+```cmd
+launch_song_editor_simple.bat
+```
+
+### Direct Python execution:
+```bash
+python3 run_song_editor_direct.py
+```
+
+These methods run the application directly from source without requiring PyInstaller or additional disk space for building.
+
 ## Usage
 
 ### Basic Workflow
@@ -159,6 +180,7 @@ pytest --cov=song_editor
 2. **Memory errors**: Close other applications to free up RAM
 3. **Slow processing**: Consider using GPU acceleration if available
 4. **Model download issues**: Check your internet connection and firewall settings
+5. **Disk space issues**: Use the direct launcher scripts instead of building executables
 
 ### Getting Help
 
